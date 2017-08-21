@@ -1,4 +1,4 @@
-# lucassouza.ninja
+# resume.ninja
 Site pessoal
 
 ## Exemplo de Configuração
