@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="ninjaApp" ng-controller="ResumeController as vm">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,7 @@
   <meta name="keywords" content="">
 
 
-  <title>Flatrica | Material CV/Resume</title>
+  <title>{{vm.resume.name}} - {{vm.resume.title}}</title>
   <link rel="icon" href="images/site/fav-icon.png">
 
   <!--APPLE TOUCH ICON-->
@@ -49,7 +49,7 @@
   <link href="toggle/toggle.css" rel="stylesheet">
 
 </head>
-<body ng-app="ninjaApp" ng-controller="ResumeController as vm">
+<body>
 
 
 <!--==========================================
@@ -159,23 +159,23 @@
               <ul class="profile-list">
                 <li class="clearfix">
                   <span class="title"><i class="material-icons">email</i></span>
-                  <span class="content">{{vm.resume.email}}</span>
+                  <span class="content">{{vm.resume.contact.email}}</span>
                 </li>
                 <li class="clearfix">
                   <span class="title"><i class="material-icons">language</i></span>
-                  <span class="content">{{vm.resume.website}}</span>
+                  <span class="content">{{vm.resume.contact.website}}</span>
                 </li>
                 <li class="clearfix">
                   <span class="title"><i class="fa fa-skype" aria-hidden="true"></i></span>
-                  <span class="content">{{vm.resume.skype}}</span>
+                  <span class="content">{{vm.resume.contact.skype}}</span>
                 </li>
                 <li class="clearfix">
                   <span class="title"><i class="material-icons">phone</i></span>
-                  <span class="content">{{vm.resume.phone}}</span>
+                  <span class="content">{{vm.resume.contact.phone}}</span>
                 </li>
                 <li class="clearfix">
                   <span class="title"><i class="material-icons">place</i></span>
-                  <span class="content">{{vm.resume.place}}</span>
+                  <span class="content">{{vm.resume.contact.place}}</span>
                 </li>
 
               </ul>
@@ -184,27 +184,27 @@
             <!--LINKS-->
             <div class="links">
               <!-- FACEBOOK-->
-              <a ng-if="vm.resume.links.facebook" target="_blank" href="{{vm.resume.links.facebook}}" id="first_one" class="social btn-floating indigo">
+              <a ng-if="vm.resume.contact.facebook" target="_blank" href="{{vm.resume.contact.facebook}}" id="first_one" class="social btn-floating indigo">
                 <i class="fa fa-facebook"></i>
               </a>
               <!-- TWITTER-->
-              <a ng-if="vm.resume.links.twitter" target="_blank" href="{{vm.resume.links.twitter}}" class="social  btn-floating blue">
+              <a ng-if="vm.resume.contact.twitter" target="_blank" href="{{vm.resume.contact.twitter}}" class="social  btn-floating blue">
                 <i class="fa fa-twitter"></i>
               </a>
               <!-- GOOGLE+-->
-              <a ng-if="vm.resume.links.google_plus" target="_blank"  href="{{vm.resume.links.google_plus}}" class="social  btn-floating red">
+              <a ng-if="vm.resume.contact.google_plus" target="_blank"  href="{{vm.resume.contact.google_plus}}" class="social  btn-floating red">
                 <i class="fa fa-google-plus"></i>
               </a>
               <!-- LINKEDIN-->
-              <a ng-if="vm.resume.links.linkedin" target="_blank"  href="{{vm.resume.links.linkedin}}" class="social  btn-floating blue darken-3">
+              <a ng-if="vm.resume.contact.linkedin" target="_blank"  href="{{vm.resume.contact.linkedin}}" class="social  btn-floating blue darken-3">
                 <i class="fa fa-linkedin"></i>
               </a>
               <!-- GITHUB-->
-              <a ng-if="vm.resume.links.github" target="_blank"  href="{{vm.resume.links.github}}" class="social  btn-floating black darken-3">
+              <a ng-if="vm.resume.contact.github" target="_blank"  href="{{vm.resume.contact.github}}" class="social  btn-floating black darken-3">
                 <i class="fa fa-github-alt"></i>
               </a>
               <!-- GITHUB-->
-              <a ng-if="vm.resume.links.stack_overflow" target="_blank"  href="{{vm.resume.links.stack_overflow}}" class="social  btn-floating green darken-3">
+              <a ng-if="vm.resume.contact.stack_overflow" target="_blank"  href="{{vm.resume.contact.stack_overflow}}" class="social  btn-floating green darken-3">
                 <i class="fa fa-stack-overflow"></i>
               </a>
             </div>
@@ -1577,7 +1577,8 @@
 <script src="toggle/js.js"></script>
 <script src="javascript/vendors/angular.min.js"></script>
 <script src="ninjaApp.js"></script>
-<script src="ResumeController.js"></script>
+<script src="resume.controller.js"></script>
+<script src="resume.service.js"></script>
 
 
 </body>
