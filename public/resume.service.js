@@ -5,14 +5,15 @@
       .module('ninjaApp')
       .factory('resumeService', resumeService);
 
-  resumeService.$inject = ['$http'];
+  resumeService.$inject = ['$http', '$location'];
 
-  function resumeService($http) {
+  function resumeService($http, $location) {
     var service = {};
 
     service.load = _load;
 
     function _load() {
+      console.log($location.hostname);
       return $http.get('./configuration/example.json');
     }
 
