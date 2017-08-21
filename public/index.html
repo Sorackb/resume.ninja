@@ -91,7 +91,7 @@
       <a href="#education"><i class="title-icon fa fa-graduation-cap"></i>Education</a>
       <a href="#skills"><i class="title-icon fa fa-sliders"></i>Skills</a>
       <a href="#experience"><i class="title-icon fa fa-suitcase"></i>Experience</a>
-      <a href="#portfolios"><i class="title-icon fa fa-archive"></i>Portfolios</a>
+      <a href="#portfolios" ng-if="vm.resume.porfolio"><i class="title-icon fa fa-archive"></i>Portfolios</a>
       <a href="#interest"><i class="title-icon fa fa-heart"></i>Interest</a>
       <a href="#testimonials"><i class="title-icon fa fa-users"></i>Testimonials</a>
       <a href="#pricing-table"><i class="title-icon fa fa-money"></i>Pricing</a>
@@ -873,7 +873,7 @@
 <!--==========================================
                   PORTFOLIOS
 ===========================================-->
-<section id="portfolios" class="section">
+<section id="portfolios" class="section" ng-if="vm.resume.porfolio">
   <div class="container">
     <!-- SECTION TITLE -->
     <div class="section-title">
@@ -1576,7 +1576,7 @@
 <script src="javascript/custom.js"></script>
 <script src="toggle/js.js"></script>
 <script src="javascript/vendors/angular.min.js"></script>
-<script src="ninjaApp.js"></script>
+<script src="ninja.app.js"></script>
 <script src="resume.controller.js"></script>
 <script src="resume.service.js"></script>
 
