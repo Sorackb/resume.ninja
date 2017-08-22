@@ -10,7 +10,7 @@ router.get('/resource', function(req, res, next) {
 
 router.get('/token', function(req, res, next) {
   configuration.getToken(req.protocol, req.headers.host).then(function(response) {
-    res.jsonp(response);
+    res.redirect(response);
   }).catch(console.error);
 });
 
