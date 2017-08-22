@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('lucassouza.ninja:server');
+var debug = require('debug')('resume-ninja:server');
 var http = require('http');
 
 /**
