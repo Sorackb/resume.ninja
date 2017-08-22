@@ -3,18 +3,17 @@
   "avatar": "lucassouza_profile.png",
   "background": "background.jpg",
   "title": "Desenvolvedor Full Stack Sênior",
-  "about": "Hello! I’m John Doe. Senior Web Developer with over 13 years of experience specializing in front end development. Experienced with all stages of the development cycle for dynamic web projects.Having an in-depth knowledge including advanced HTML5, CSS, CSS3, SASS, LESS, JSON, XML, Java, JavaScript, JQuery, Angular JS. Strong background in management and leadership.",
+  "about": "Sou um Desenvolvedor Full Stack Sênior com mais de 10 anos de experiência em todos os estágios do ciclo de desenvolvimento. Tenho prática em desenvolvimento de software, criação de frameworks, integração entre sistemas, mentoria para desenvolvedores e identificação de talentos em desenvolvimento. Com ensino superior concluído, possuo conhecimento de arquitetura de software e desenvolvimento avançados, incluindo Java, JavaScript, Delphi, HTML5, JSON, XML, MySQL, Microsoft SQLServer, JQuery, Node.js e AngularJS. Disponho de prática em todos os estágios do ciclo de desenvolvimento. Forte experiência em gestão e liderança.",
   "contact": {
     "email": "sorackb@gmail.com",
     "website": "lucassouza.ninja",
     "skype": "sorackb",
     "phone": "+55 (42) 99949-3924",
-    "place": "LampStreet 34/3, London, UK",
-    "facebook": "#",
-    "twitter": "#",
-    "google_plus": "#",
-    "linkedin": "#",
-    "github": "#"
+    "place": "Rua Bento do Amaral, 55 - Uvaranas - Ponta Grossa / PR - Brasil",
+    "facebook": "https://www.facebook.com/lucasbss",
+    "google_plus": "https://plus.google.com/u/1/105353010340963385077",
+    "linkedin": "https://www.linkedin.com/in/lucas-bernardo-de-souza-santos/",
+    "github": "https://github.com/sorackb"
   },
   "education": [
     {
