@@ -2,7 +2,7 @@ var Linkedin = require('node-linkedin');
 var fs = require('fs');
 var configuration = {};
 var configurations = {};
-var linkedin = {};
+var store = {};
 var promise;
 
 const DIR = './configuration/';
@@ -16,10 +16,10 @@ _init();
 function _init() {
   promise = _read();
 
-  linkedin = {};
-  linkedin.resources = ['r_basicprofile'];
-  linkedin.apis = {};
-  linkedin.results = {};
+  store.linkedin = {};
+  store.linkedin.resources = ['r_basicprofile'];
+  store.linkedin.apis = {};
+  store.linkedin.results = {};
 }
 
 function _read() {
@@ -58,7 +58,7 @@ function _getToken(protocol, host) {
     callbackURL = protocol + '://' + host + '/oauth/linkedin/callback';
 
     api = Linkedin(data.linkedin.clientId, data.linkedin.secret, callbackURL)
-    linkedin.apis[data.key] = api;
+    store.linkedin.apis[data.key] = api;
     resolve(api.auth.authorize(linkedin.resources));
   });
 }
@@ -66,14 +66,24 @@ function _getToken(protocol, host) {
 function _oauthLinkedinCallback(host, code, state) {
   return new Promise(function(resolve, reject) {
     var data = _resolve(host);
+    var api = store.linkedin.apis[data.key];
 
-    linkedin.apis[data.key].auth.getAccessToken(code, state, function(err, results) {
+    api.auth.getAccessToken(code, state, function(err, results) {
+      var linkedin;
+
       if (err) {
         return reject(err);
       }
 
       console.log(JSON.stringify(results));
-      linkedin.results[data.key] = results;
+      store.linkedin.results[data.key] = results;
+
+      linkedin = api.init('my_access_token');
+
+      linkedin.people.me(function(err, $in) {
+        console.log(JSON.stringify($in));
+      });
+      
       resolve(results);
     });
   });
