@@ -52,7 +52,7 @@ function _getToken(protocol, host) {
     secret = process.env[data.key + '_LI_SECRET'];
 
     linkedin.apis[data.key] = Linkedin(clientId, secret, protocol + '://' + host + '/oauth/linkedin/callback');
-    linkedin.apis[data.key].auth.authorize(resolve, linkedin.resources);
+    resolve(linkedin.apis[data.key].auth.authorize(linkedin.resources));
   });
 }
 
