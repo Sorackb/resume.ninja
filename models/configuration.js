@@ -62,7 +62,7 @@ function _getToken(protocol, host) {
 }
 
 function _oauthLinkedinCallback(code, state) {
-  new Promise(function(resolve, reject) {
+  return new Promise(function(resolve, reject) {
     var data = _resolve(host);
 
     linkedin.apis[data.key].auth.getAccessToken(code, state, function(err, results) {
