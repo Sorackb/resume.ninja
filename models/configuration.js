@@ -31,8 +31,8 @@ function _read() {
         json.linkedin = {};
       }
 
-      linkedin.clientId = process.env[json.key + '_LI_CLIENTE_ID'];
-      linkedin.secret = process.env[json.key + '_LI_SECRET'];
+      json.linkedin.clientId = process.env[json.key + '_LI_CLIENTE_ID'];
+      json.linkedin.secret = process.env[json.key + '_LI_SECRET'];
       configurations[file.replace(/\.json$/, '')] = json;
     });
 
