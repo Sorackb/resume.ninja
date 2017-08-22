@@ -34,9 +34,9 @@ function _read() {
 
 function _get(host) {
   return new Promise(function(resolve, reject) {
-    host = host.indexOf('localhost') === 0 ? 'resume-ninja.herokuapp.com' : host;
-
-    promise.then(resolve.bind(null, configurations[host]));
+    promise.then(function() {
+      resolve(_resolve(host));
+    });
   });
 }
 
@@ -45,28 +45,37 @@ function _getToken(protocol, host) {
     var data;
     var clientId;
     var secret;
+    var callbackURL
     
-    host = host.indexOf('localhost') === 0 ? 'resume-ninja.herokuapp.com' : host;
-    data = configurations[host];
+    data = _resolve(host);
     clientId = process.env[data.key + '_LI_CLIENTE_ID'];
     secret = process.env[data.key + '_LI_SECRET'];
-
-    linkedin.apis[data.key] = Linkedin(clientId, secret, protocol + '://' + host + '/oauth/linkedin/callback');
+    callbackURL = protocol + '://' + host + '/oauth/linkedin/callback';
+    
+    linkedin.apis[data.key] = Linkedin(clientId, secret, callbackURL);
     resolve(linkedin.apis[data.key].auth.authorize(linkedin.resources));
   });
 }
 
 function _oauthLinkedinCallback(code, state) {
   new Promise(function(resolve, reject) {
-    linkedin.apis['LUCASSOUZA'].auth.getAccessToken(code, state, function(err, results) {
+    var data = _resolve(host);
+
+    linkedin.apis[data.key].auth.getAccessToken(code, state, function(err, results) {
       if (err) {
         return reject(err);
       }
 
-      linkedin.results['LUCASSOUZA'] = results;
+      linkedin.results[data.key] = results;
       resolve(results);
     });
   });
+}
+
+function _resolve(host) {
+  host = host.indexOf('localhost') === 0 ? 'resume-ninja.herokuapp.com' : host;
+
+  return configurations[host];
 }
 
 module.exports = configuration;
