@@ -59,7 +59,7 @@ function _getToken(protocol, host) {
 
     api = Linkedin(data.linkedin.clientId, data.linkedin.secret, callbackURL)
     store.linkedin.apis[data.key] = api;
-    resolve(api.auth.authorize(linkedin.resources));
+    resolve(api.auth.authorize(store.linkedin.resources));
   });
 }
 
