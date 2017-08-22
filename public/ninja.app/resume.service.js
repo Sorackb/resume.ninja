@@ -13,8 +13,7 @@
     service.load = _load;
 
     function _load() {
-      console.log($location.host());
-      return $http.get('./configuration/example.json');
+      return $http.get('./configuration/' + $location.host() + '.json');
     }
 
     return service;
