@@ -68,23 +68,22 @@ function _oauthLinkedinCallback(host, code, state) {
     var data = _resolve(host);
     var api = store.linkedin.apis[data.key];
 
-    api.auth.getAccessToken(code, state, function(err, results) {
+    api.auth.getAccessToken(code, state, function(err, result) {
       var linkedin;
 
       if (err) {
         return reject(err);
       }
 
-      console.log(JSON.stringify(results));
-      store.linkedin.results[data.key] = results;
+      store.linkedin.results[data.key] = result;
 
-      linkedin = api.init('my_access_token');
+      linkedin = api.init(result.access_token);
 
       linkedin.people.me(function(err, $in) {
         console.log(JSON.stringify($in));
       });
       
-      resolve(results);
+      resolve(result);
     });
   });
 }
