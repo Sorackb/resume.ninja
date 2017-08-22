@@ -50,18 +50,20 @@ function _get(host) {
 
 function _getToken(protocol, host) {
   return new Promise(function(resolve, reject) {
-    var data;
     var callbackURL;
+    var data;
+    var api;
 
     data = _resolve(host);
     callbackURL = protocol + '://' + host + '/oauth/linkedin/callback';
 
-    linkedin.apis[data.key] = Linkedin(data.linkedin.clientId, data.linkedin.secret, callbackURL);
-    resolve(linkedin.apis[data.key].auth.authorize(linkedin.resources));
+    api = Linkedin(data.linkedin.clientId, data.linkedin.secret, callbackURL)
+    linkedin.apis[data.key] = api;
+    resolve(api.auth.authorize(linkedin.resources));
   });
 }
 
-function _oauthLinkedinCallback(code, state) {
+function _oauthLinkedinCallback(host, code, state) {
   return new Promise(function(resolve, reject) {
     var data = _resolve(host);
 
