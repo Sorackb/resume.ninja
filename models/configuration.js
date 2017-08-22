@@ -25,7 +25,15 @@ function _init() {
 function _read() {
   return new Promise(function(resolve, reject) {
     fs.readdirSync(DIR).forEach(function (file) {
-      configurations[file.replace(/\.json$/, '')] = JSON.parse(fs.readFileSync(DIR + file, 'utf8'));
+      var json = JSON.parse(fs.readFileSync(DIR + file, 'utf8'));
+
+      if (!json.linkedin) {
+        json.linkedin = {};
+      }
+
+      linkedin.clientId = process.env[json.key + '_LI_CLIENTE_ID'];
+      linkedin.secret = process.env[json.key + '_LI_SECRET'];
+      configurations[file.replace(/\.json$/, '')] = json;
     });
 
     resolve(configurations);
@@ -43,16 +51,12 @@ function _get(host) {
 function _getToken(protocol, host) {
   return new Promise(function(resolve, reject) {
     var data;
-    var clientId;
-    var secret;
-    var callbackURL
-    
+    var callbackURL;
+
     data = _resolve(host);
-    clientId = process.env[data.key + '_LI_CLIENTE_ID'];
-    secret = process.env[data.key + '_LI_SECRET'];
     callbackURL = protocol + '://' + host + '/oauth/linkedin/callback';
-    
-    linkedin.apis[data.key] = Linkedin(clientId, secret, callbackURL);
+
+    linkedin.apis[data.key] = Linkedin(data.linkedin.clientId, data.linkedin.secret, callbackURL);
     resolve(linkedin.apis[data.key].auth.authorize(linkedin.resources));
   });
 }
