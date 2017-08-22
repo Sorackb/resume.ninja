@@ -17,7 +17,7 @@ function _init() {
   promise = _read();
 
   linkedin = {};
-  linkedin.resources = ['r_basicprofile', 'r_fullprofile'];
+  linkedin.resources = ['r_basicprofile'];
   linkedin.apis = {};
   linkedin.results = {};
 }
