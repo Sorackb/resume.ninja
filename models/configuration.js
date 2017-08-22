@@ -72,6 +72,7 @@ function _oauthLinkedinCallback(host, code, state) {
         return reject(err);
       }
 
+      console.log(JSON.stringify(results));
       linkedin.results[data.key] = results;
       resolve(results);
     });
