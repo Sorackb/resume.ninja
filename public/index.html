@@ -233,11 +233,7 @@
           <div class="card-content">
             <!-- ABOUT PARAGRAPH -->
             <p>
-              Hello! I’m John Doe. Senior Web Developer with over 13 years of experience
-              specializing in front end development. Experienced with all stages of the
-              development cycle for dynamic web projects.Having an in-depth knowledge
-              including advanced HTML5, CSS, CSS3, SASS, LESS, JSON, XML, Java, JavaScript,
-              JQuery, Angular JS. Strong background in management and leadership.
+              {{vm.resume.about}}
             </p>
           </div>
 
@@ -260,7 +256,7 @@
 <!--==========================================
                    EDUCATION
 ===========================================-->
-<section id="education" class="section">
+<section ng-if="vm.resume.education" id="education" class="section">
   <div class="container">
     <!-- SECTION TITLE -->
     <div class="section-title">
@@ -269,180 +265,37 @@
 
     <div id="timeline-education">
 
-      <!-- FIRST TIMELINE -->
-      <div class="timeline-block">
+      <div class="timeline-block" ng-repeat="education in vm.resume.education">
         <!-- DOT -->
-        <div class="timeline-dot"><h6>P</h6></div>
+        <div class="timeline-dot">
+          <h6 ng-if="!education.icon">{{education.title.substring(0, 1).toUpperCase()}}</h6>
+          <i ng-if="education.icon" class="fa {{education.icon}}"></i>
+        </div>
         <!-- TIMELINE CONTENT -->
         <div class="card timeline-content">
           <div class="card-content">
             <!-- TIMELINE TITLE -->
-            <h6 class="timeline-title">Preparatory Education</h6>
+            <h6 class="timeline-title">{{education.title}}</h6>
             <!-- TIMELINE TITLE INFO -->
             <div class="timeline-info">
               <h6>
-                <small>Fedrick School</small>
+                <small>{{education.institution}}</small>
               </h6>
               <h6>
-                <small>Jan 1997 - Mar 2000</small>
+                <small>{{education.period}}</small>
               </h6>
             </div>
             <!-- TIMELINE PARAGRAPH -->
             <p>
-              I completed my preparatory education from this prestigious institution.
-              I successful completed all the credits without any fallout and got A grade overall.
+              {{education.description.substring(0, 300)}}
             </p>
             <!-- BUTTON TRIGGER MODAL -->
-            <a href="#" class="modal-dot" data-toggle="modal" data-target="#myModal-1">
+            <a ng-if="education.description.length > 300" ng-click="vm.modal = education" href="#" class="modal-dot" data-toggle="modal" data-target="#modal-education">
               <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
             </a>
           </div>
         </div>
       </div>
-
-      <!-- SECOND TIMELINE -->
-      <div class="timeline-block">
-        <!-- DOT -->
-        <div class="timeline-dot"><h6>H</h6></div>
-        <!-- TIMELINE CONTENT -->
-        <div class="card timeline-content">
-          <div class="card-content">
-            <!-- TIMELINE TITLE -->
-            <h6 class="timeline-title">High School</h6>
-            <!-- TIMELINE TITLE INFO -->
-            <div class="timeline-info">
-              <h6>
-                <small>RedStreet College</small>
-              </h6>
-              <h6>
-                <small>Jan 2000 - Mar 2005</small>
-              </h6>
-            </div>
-            <!-- TIMELINE PARAGRAPH -->
-            <p>
-              I completed my high school degree from this prestigious institution.
-              I successful completed all the credits without any fallout and got A grade overall.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- THIRD TIMELINE -->
-      <div class="timeline-block">
-        <!-- DOT -->
-        <div class="timeline-dot"><h6>C</h6></div>
-        <!-- TIMELINE CONTENT -->
-        <div class="card timeline-content">
-          <div class="card-content">
-            <!-- TIMELINE TITLE -->
-            <h6 class="timeline-title">Computer Science</h6>
-            <!-- TIMELINE TITLE INFO -->
-            <div class="timeline-info">
-              <h6>
-                <small>Down Street College</small>
-              </h6>
-              <h6>
-                <small>Jan 2006 - Mar 2008</small>
-              </h6>
-            </div>
-            <!-- TIMELINE PARAGRAPH -->
-            <p>
-              I completed my computer science degree from this prestigious institution.
-              I successful completed all the credits without any fallout and got A grade overall.
-            </p>
-
-          </div>
-        </div>
-      </div>
-
-      <!-- FOURTH TIMELINE -->
-      <div class="timeline-block">
-        <!-- DOT -->
-        <div class="timeline-dot"><i class="fa fa-graduation-cap"></i></div>
-        <!-- TIMELINE CONTENT -->
-        <div class="card timeline-content">
-          <div class="card-content">
-            <!-- TIMELINE TITLE -->
-            <h6 class="timeline-title">Software Engineering</h6>
-            <!-- TIMELINE TITLE INFO -->
-            <div class="timeline-info">
-              <h6>
-                <small>Oxford University</small>
-              </h6>
-              <h6>
-                <small>Jan 2009 - Mar 2010</small>
-              </h6>
-            </div>
-            <!-- TIMELINE PARAGRAPH -->
-            <p>
-              I completed this degree from this prestigious institution.
-              I successful completed all the credits without any fallout and got A grade overall.
-            </p>
-
-          </div>
-        </div>
-      </div>
-      <!-- FIFTH TIMELINE -->
-      <div class="timeline-block">
-        <!-- DOT -->
-        <div class="timeline-dot"><h6>U</h6></div>
-        <!-- TIMELINE CONTENT -->
-        <div class="card timeline-content">
-          <div class="card-content">
-            <!-- TIMELINE TITLE -->
-            <h6 class="timeline-title">UI/UX Workshop</h6>
-            <!-- TIMELINE TITLE INFO -->
-            <div class="timeline-info">
-              <h6>
-                <small>IT Next Academy</small>
-              </h6>
-              <h6>
-                <small>Jan 2010 - Mar 2011</small>
-              </h6>
-            </div>
-            <!-- TIMELINE PARAGRAPH -->
-            <p>
-              I completed this course from this prestigious institution.
-              I successful completed all the credits without any fallout and got A grade overall.
-            </p>
-            <!-- BUTTON TRIGGER MODAL -->
-            <a href="#" class="modal-dot" data-toggle="modal" data-target="#myModal-2">
-              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- SIXTH TIMELINE -->
-      <div class="timeline-block">
-        <!-- DOT -->
-        <div class="timeline-dot"><i class="fa fa-globe"></i></div>
-        <!-- TIMELINE CONTENT -->
-        <div class="card timeline-content">
-          <div class="card-content">
-            <!-- TIMELINE TITLE -->
-            <h6 class="timeline-title">Web Development</h6>
-            <!-- TIMELINE TITLE INFO -->
-            <div class="timeline-info">
-              <h6>
-                <small>Lipro University</small>
-              </h6>
-              <h6>
-                <small>Jan 2011 - Mar 2012</small>
-              </h6>
-            </div>
-            <!-- TIMELINE PARAGRAPH -->
-            <p>
-              I completed this course from this prestigious institution.
-              I successful completed all the credits without any fallout and got A grade overall.
-            </p>
-            <!-- BUTTON TRIGGER MODAL -->
-            <a href="#" class="modal-dot" data-toggle="modal" data-target="#myModal-3">
-              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
@@ -703,34 +556,22 @@
 ===========================================-->
 <section>
   <!--MODAL ONE-->
-  <div class="modal fade" id="myModal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-1">
+  <div class="modal fade" id="modal-education" tabindex="-1" role="dialog" aria-labelledby="modal-label-education">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <!--MODAL HEADER-->
         <div class="modal-header  text-center">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                   aria-hidden="true"><i class="fa fa-close"></i></span></button>
-          <h4 class="modal-title" id="myModalLabel-1">GRADUATION AT ASHTON UNI</h4>
+          <h4 class="modal-title" id="modal-label-education">{{vm.modal.title}}</h4>
           <h6>
-            <small>Jan 2014 - Mar 2015</small>
+            <small>{{vm.modal.period}}</small>
           </h6>
         </div>
         <!--MODAL BODY-->
         <div class="modal-body">
-          <img class="img-responsive" alt="graduation" src="images/timeline/demo-gra.jpg">
           <p>
-            I have learned a great many things from participating in varsity football.
-            It has changed my entire outlook on and attitude toward life. Before my
-            freshman year at [high-school], I was shy, had low self-esteem and turned
-            away from seemingly impossible challenges. Football has altered all of these
-            qualities. On the first day of freshman practice, the team warmed up with a
-            game of touch football. The players were split up and the game began. However,
-            during the game, I noticed that I didn't run as hard as I could, nor did I try
-            to evade my defender and get open. The fact of the matter is that I really did
-            not want to be thrown the ball. I didn't want to be the one at fault if I dropped
-            the ball and the play didn't succeed. I did not want the responsibility of helping
-            the team because I was too afraid of making a mistake. That aspect of my character
-            led the first years of my high school life. All the while, I went to practice.
+            {{vm.modal.description}}
           </p>
         </div>
         <!--MODAL FOOTER-->

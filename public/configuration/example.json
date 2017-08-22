@@ -1,6 +1,7 @@
 {
   "name": "John Doe",
   "title": "Software Engineer & UI/UX Expert",
+  "about": "Hello! I’m John Doe. Senior Web Developer with over 13 years of experience specializing in front end development. Experienced with all stages of the development cycle for dynamic web projects.Having an in-depth knowledge including advanced HTML5, CSS, CSS3, SASS, LESS, JSON, XML, Java, JavaScript, JQuery, Angular JS. Strong background in management and leadership.",
   "contact": {
     "email": "email@mailprovider.com",
     "website": "yourpersonalwebsite.com",
@@ -34,6 +35,7 @@
       "description": "I completed my computer science degree from this prestigious institution. I successful completed all the credits without any fallout and got A grade overall."
     },
     {
+      "icon": "fa-graduation-cap",
       "title": "Software Engineering",
       "institution": "Oxford University",
       "period": "Jan 2009 - Mar 2010",
@@ -46,6 +48,7 @@
       "description": "I have learned a great many things from participating in varsity football. It has changed my entire outlook on and attitude toward life. Before my freshman year at [high-school], I was shy, had low self-esteem and turned away from seemingly impossible challenges. Football has altered all of these qualities. On the first day of freshman practice, the team warmed up with a game of touch football. The players were split up and the game began."
     },
     {
+      "icon": "fa-globe",
       "title": "Web Development",
       "institution": "Lipro University",
       "period": "Jan 2011 - Mar 2012",
