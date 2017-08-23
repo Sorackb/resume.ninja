@@ -4,13 +4,13 @@
   "avatar": "lucassouza_profile.png",
   "background": "background.jpg",
   "title": "Desenvolvedor Full Stack Sênior",
-  "about": "Sou um Desenvolvedor Full Stack Sênior com mais de 10 anos de experiência em todos os estágios do ciclo de desenvolvimento. Tenho prática em desenvolvimento de software, criação de frameworks, integração entre sistemas, mentoria para desenvolvedores e identificação de talentos em desenvolvimento. Com ensino superior concluído, possuo conhecimento de arquitetura de software e desenvolvimento avançados, incluindo Java, JavaScript, Delphi, HTML5, JSON, XML, MySQL, Microsoft SQLServer, JQuery, Node.js e AngularJS. Disponho de prática em todos os estágios do ciclo de desenvolvimento. Forte experiência em gestão e liderança.",
+  "about": "Sou um Desenvolvedor Full Stack Sênior com mais de 10 anos de experiência em todos os estágios do ciclo de desenvolvimento. Tenho prática em desenvolvimento de software, criação de frameworks, integração entre sistemas, mentoria para desenvolvedores e identificação de talentos em desenvolvimento. Com ensino superior concluído, possuo conhecimento de arquitetura de software e desenvolvimento avançados, incluindo Java, JavaScript, Delphi, HTML5, JSON, XML, MySQL, Microsoft SQLServer, JQuery, Node.js e AngularJS. Forte experiência em gestão e liderança.",
   "contact": {
     "email": "sorackb@gmail.com",
     "website": "lucassouza.ninja",
     "skype": "sorackb",
     "phone": "+55 (42) 99949-3924",
-    "place": "Rua Bento do Amaral, 55 - Uvaranas - Ponta Grossa / PR - Brasil",
+    "place": "Ponta Grossa / PR - Brasil",
     "facebook": "https://www.facebook.com/lucasbss",
     "google_plus": "https://plus.google.com/u/1/105353010340963385077",
     "linkedin": "https://www.linkedin.com/in/lucas-bernardo-de-souza-santos/",
@@ -18,42 +18,29 @@
   },
   "education": [
     {
-      "title": "Preparatory Education",
-      "institution": "Fedrick School",
-      "period": "Jan 1997 - Mar 2000",
-      "description": "I have learned a great many things from participating in varsity football. It has changed my entire outlook on and attitude toward life. Before my freshman year at [high-school], I was shy, had low self-esteem and turned away from seemingly impossible challenges. Football has altered all of these qualities. On the first day of freshman practice, the team warmed up with a game of touch football. The players were split up and the game began. However, during the game, I noticed that I didn't run as hard as I could, nor did I try to evade my defender and get open. The fact of the matter is that I really did not want to be thrown the ball. I didn't want to be the one at fault if I dropped the ball and the play didn't succeed. I did not want the responsibility of helping the team because I was too afraid of making a mistake. That aspect of my character led the first years of my high school life. All the while, I went to practice."
+      "title": "Educação Preparatória",
+      "institution": "Colégio Adventista de Interlagos",
+      "period": "1997 - 2002",
+      "description": "Obtive a base para meus estudos antes do Ensino Médio, valorizando o estudo e o aprendizado e adquirindo afinidade com o conhecimento."
     },
     {
-      "title": "High School",
-      "institution": "RedStreet College",
-      "period": "Jan 2000 - Mar 2005",
-      "description": "I completed my high school degree from this prestigious institution. I successful completed all the credits without any fallout and got A grade overall."
+      "title": "Ensino Médio",
+      "institution": "Colégio Adventista de Interlagos",
+      "period": "2003 - 2005",
+      "description": "Completei a preparação para o vestibular nesta instituição que possue, além de todos os méritos acadêmicos, um compromisso com a educação ética."
     },
     {
-      "title": "Computer Science",
-      "institution": "Down Street College",
-      "period": "Jan 2006 - Mar 2008",
-      "description": "I completed my computer science degree from this prestigious institution. I successful completed all the credits without any fallout and got A grade overall."
+      "title": "Mecânico de Usinagem",
+      "institution": "SENAI Ary Torres",
+      "period": "2003 - 2005",
+      "description": "Qualificação profissional em processos de usinagem com máquinas convencionais e a comando numérico computadorizado (CNC).\nNeste curso com duração de 4 semestres obtive destaque em nota em todos os semestres, sendo prestigiado assim com certificados emitidos pela instituição.\nAprendi a administrar o tempo de estudo realizando o curso no contraturno do Ensino Médio."
     },
     {
       "icon": "fa-graduation-cap",
-      "title": "Software Engineering",
-      "institution": "Oxford University",
-      "period": "Jan 2009 - Mar 2010",
-      "description": "I completed this degree from this prestigious institution. I successful completed all the credits without any fallout and got A grade overall."
-    },
-    {
-      "title": "UI/UX Workshop",
-      "institution": "IT Next Academy",
-      "period": "Jan 2010 - Mar 2011",
-      "description": "I have learned a great many things from participating in varsity football. It has changed my entire outlook on and attitude toward life. Before my freshman year at [high-school], I was shy, had low self-esteem and turned away from seemingly impossible challenges. Football has altered all of these qualities. On the first day of freshman practice, the team warmed up with a game of touch football. The players were split up and the game began."
-    },
-    {
-      "icon": "fa-globe",
-      "title": "Web Development",
-      "institution": "Lipro University",
-      "period": "Jan 2011 - Mar 2012",
-      "description": "I have learned a great many things from participating in varsity football. It has changed my entire outlook on and attitude toward life. Before my freshman year at [high-school], I was shy, had low self-esteem and turned away from seemingly impossible challenges. Football has altered all of these qualities. On the first day of freshman practice, the team warmed up with a game of touch football. The players were split up and the game began."
+      "title": "Tecnologia em Análise e Desenvolvimento de Sistemas",
+      "institution": "Universidade Tecnológica Federal do Paraná",
+      "period": "2013 - 2017",
+      "description": "Formação profissional para a atuação em desenvolvimento tecnológico em informática, com ênfase em desenvolvimento de sistemas de informação, utilizando as modernas tecnologias da informação. Capacitação para adaptar-se às mudanças sociais e à evolução tecnológica, possibilitando uma constante atualização nas diversas tarefas e qualificações que o mundo do trabalho exige.\nAlgumas atividades que às quais o curso habilita são: programação em linguagem comercial e científica, operação e manutenção de sistemas de computadores, supervisão e orientação do trabalho de equipes de tecnologia de informação, análise e orientação de computação eletrônica, chefia nas áreas de tecnologia de informação, elaboração de manuais e documentos de sistemas, implantação e gerência de redes de teleprocessamento."
     }
   ],
   "experience": [
