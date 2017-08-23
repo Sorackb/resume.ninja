@@ -1,4 +1,4 @@
-var Linkedin       = require('node-linkedin');
+var Linkedin       = require('node-linkedin')(process.env['LINKEDIN_CLIENTE_ID'], process.env['LINKEDIN_SECRET']);
 var fs             = require('fs');
 var configuration  = {};
 var configurations = {};
@@ -27,12 +27,6 @@ function _read() {
     fs.readdirSync(DIR).forEach(function(file) {
       var json = JSON.parse(fs.readFileSync(DIR + file, 'utf8'));
 
-      if (!json.linkedin) {
-        json.linkedin = {};
-      }
-
-      json.linkedin.clientId                      = process.env[json.key + '_LI_CLIENTE_ID'];
-      json.linkedin.secret                        = process.env[json.key + '_LI_SECRET'];
       configurations[file.replace(/\.json$/, '')] = json;
     });
 
@@ -56,10 +50,8 @@ function _getToken(protocol, host) {
 
     data        = _resolve(host);
     callbackURL = protocol + '://' + host + '/oauth/linkedin/callback';
-
-    api                           = Linkedin(data.linkedin.clientId, data.linkedin.secret, callbackURL)
-    store.linkedin.apis[data.key] = api;
-    resolve(api.auth.authorize(store.linkedin.resources));
+    Linkedin.setCallback(callbackURL);
+    resolve(Linkedin.auth.authorize(store.linkedin.resources));
   });
 }
 
