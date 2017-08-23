@@ -88,9 +88,9 @@
       <!--OPTIONS-->
       <a href="#home"><i class="title-icon fa fa-user"></i>Home</a>
       <a href="#about"><i class="title-icon fa fa-dashboard"></i>About</a>
-      <a href="#education"><i class="title-icon fa fa-graduation-cap"></i>Education</a>
+      <a href="#education" ng-if="vm.resume.education"><i class="title-icon fa fa-graduation-cap"></i>Education</a>
       <a href="#skills"><i class="title-icon fa fa-sliders"></i>Skills</a>
-      <a href="#experience"><i class="title-icon fa fa-suitcase"></i>Experience</a>
+      <a href="#experience" ng-if="vm.resume.experience"><i class="title-icon fa fa-suitcase"></i>Experience</a>
       <a href="#portfolios" ng-if="vm.resume.porfolio"><i class="title-icon fa fa-archive"></i>Portfolios</a>
       <a href="#interest"><i class="title-icon fa fa-heart"></i>Interest</a>
       <a href="#testimonials"><i class="title-icon fa fa-users"></i>Testimonials</a>
@@ -268,8 +268,8 @@
       <div class="timeline-block" ng-repeat="education in vm.resume.education">
         <!-- DOT -->
         <div class="timeline-dot">
-          <h6 ng-if="!education.icon">{{education.title.substring(0, 1).toUpperCase()}}</h6>
           <i ng-if="education.icon" class="fa {{education.icon}}"></i>
+          <h6 ng-if="!education.icon">{{education.title.substring(0, 1).toUpperCase()}}</h6>
         </div>
         <!-- TIMELINE CONTENT -->
         <div class="card timeline-content">
@@ -287,10 +287,10 @@
             </div>
             <!-- TIMELINE PARAGRAPH -->
             <p>
-              {{education.description.substring(0, 300)}}
+              {{vm.treatDescription(education.description, 150)}}
             </p>
             <!-- BUTTON TRIGGER MODAL -->
-            <a ng-if="education.description.length > 300" ng-click="vm.modal = education" href="#" class="modal-dot" data-toggle="modal" data-target="#modal-education">
+            <a ng-show="education.description.length > 150" ng-click="vm.modal = education" href="#" class="modal-dot" data-toggle="modal" data-target="#modal-education">
               <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
             </a>
           </div>
@@ -421,7 +421,7 @@
 <!--==========================================
                    EXPERIENCE
 ===========================================-->
-<section id="experience" class="section">
+<section ng-if="vm.resume.experience" id="experience" class="section">
   <div class="container">
     <!-- SECTION TITLE -->
     <div class="section-title">

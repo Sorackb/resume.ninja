@@ -84,14 +84,14 @@
     }
   ],
   "interest": {
-    "text": "First of all I love music, country music is my favorite. Love watching football, movies and playing games with my buddies. I spend quite a lot of time in traveling and photography, these keeps me fresh for working environment. I also spend time volunteering at the Red Cross in London, UK each month.",
+    "text": "Em primeiro lugar eu adoro assistir séries e filmes. Amo jogar videogame e jogos eletrônicos com meus amigos. Gosto muito de dirigir e me sinto feliz quando estou viajando. Além disso, apesar de também trabalhar com isso, amo programar, mesmo no meu tempo livre.",
     "icons": {
-      "one": {"icon": "fa-music", "text": "Music"},
-      "two": {"icon": "fa-gamepad", "text": "Gaming"},
-      "three": {"icon": "fa-camera", "text": "Photography"},
-      "four": {"icon": "fa-futbol-o", "text": "Football"},
-      "five": {"icon": "fa-plane", "text": "Traveling"},
-      "six": {"icon": "fa-film", "text": "Movies"}
+      "one": {"icon": "fa-television", "text": "Séries"},
+      "two": {"icon": "fa-gamepad", "text": "Jogos"},
+      "three": {"icon": "fa-film", "text": "Filmes"},
+      "four": {"icon": "fa-plane", "text": "Viagens"},
+      "five": {"icon": "fa-car", "text": "Dirigir"},
+      "six": {"icon": "fa-keyboard-o", "text": "Programação"}
     }
   },
   "testimonials": [
