@@ -42,16 +42,14 @@ function _get(host) {
 
 function _getToken(protocol, host) {
   return new Promise(function(resolve, reject) {
-    callbackURL = protocol + '://' + host + '/oauth/linkedin/callback';
-    Linkedin.setCallback(callbackURL);
+    url = protocol + '://' + host + '/oauth/linkedin/callback';
+    Linkedin.setCallback(url);
     resolve(Linkedin.auth.authorize(store.linkedin.resources));
   });
 }
 
-function _oauthLinkedinCallback(host, code, state) {
+function _oauthLinkedinCallback(code, state) {
   return new Promise(function(resolve, reject) {
-    var data = _resolve(host);
-
     Linkedin.auth.getAccessToken(code, state, function(err, result) {
       var linkedin;
 
@@ -59,11 +57,10 @@ function _oauthLinkedinCallback(host, code, state) {
         return reject(err);
       }
       
-      data.linkedin = result;
-      fs.writeFileSync(DIR + host + '.json', data, 'utf8');
       linkedin = Linkedin.init(result.access_token);
 
       linkedin.people.me(function(err, $in) {
+        // TODO persist
         console.log(JSON.stringify($in));
       });
 
