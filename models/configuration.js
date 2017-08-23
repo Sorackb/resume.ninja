@@ -94,35 +94,4 @@ function _resolve(host) {
   return configurations[host];
 }
 
-    api.contabilizacaoItems = function(req, res, next) {
-      var itensParaEnvio = [];
-      var dados          = req.body;
-      var promessas      = [];
-
-      console.log(dados.items.length);
-
-      dados.items.forEach(function(item, key) {
-        promessas.push(new Promise(function(resolver, rejeitar) {
-          item.aprovacao = dados.aprovacao;
-
-          solicitacaoSqlDAO.contabilizacaoItem(item, function(erro, recordset) {
-            item.contItem = recordset.recordset;
-
-            solicitacaoSqlDAO.aenItem(item, function(erro, recordset) {
-              item.aenItens       = recordset.recordset;
-              itensParaEnvio[key] = item;
-
-              resolver();
-            })
-          });
-        }));
-      });
-
-      Promise.all([true, promessas]).then(function(values) {
-        res.status(200).json(itensParaEnvio);
-      }).catch(function() {
-        res.status(404).json("erro");
-      });
-    };
-
 module.exports = configuration;
