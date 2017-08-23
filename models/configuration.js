@@ -18,8 +18,6 @@ function _init() {
 
   store.linkedin           = {};
   store.linkedin.resources = ['r_basicprofile'];
-  store.linkedin.apis      = {};
-  store.linkedin.results   = {};
 }
 
 function _read() {
@@ -44,11 +42,6 @@ function _get(host) {
 
 function _getToken(protocol, host) {
   return new Promise(function(resolve, reject) {
-    var callbackURL;
-    var data;
-    var api;
-
-    data        = _resolve(host);
     callbackURL = protocol + '://' + host + '/oauth/linkedin/callback';
     Linkedin.setCallback(callbackURL);
     resolve(Linkedin.auth.authorize(store.linkedin.resources));
@@ -58,18 +51,17 @@ function _getToken(protocol, host) {
 function _oauthLinkedinCallback(host, code, state) {
   return new Promise(function(resolve, reject) {
     var data = _resolve(host);
-    var api  = store.linkedin.apis[data.key];
 
-    api.auth.getAccessToken(code, state, function(err, result) {
+    Linkedin.auth.getAccessToken(code, state, function(err, result) {
       var linkedin;
 
       if (err) {
         return reject(err);
       }
-
-      store.linkedin.results[data.key] = result;
-
-      linkedin = api.init(result.access_token);
+      
+      data.linkedin = result;
+      fs.writeFileSync(DIR + host + '.json', data, 'utf8');
+      linkedin = Linkedin.init(result.access_token);
 
       linkedin.people.me(function(err, $in) {
         console.log(JSON.stringify($in));
