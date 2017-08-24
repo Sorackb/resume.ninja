@@ -1,8 +1,7 @@
-var Linkedin       = require('node-linkedin')(process.env['LINKEDIN_CLIENTE_ID'], process.env['LINKEDIN_SECRET']);
+var Linkedin       = require('node-linkedin')(process.env.LINKEDIN_CLIENTE_ID, process.env.LINKEDIN_CLIENTE_ID);
 var fs             = require('fs');
 var configuration  = {};
 var configurations = {};
-var store          = {};
 var promise;
 
 const DIR = './configuration/';
@@ -15,9 +14,6 @@ _init();
 
 function _init() {
   promise = _read();
-
-  store.linkedin           = {};
-  store.linkedin.resources = ['r_basicprofile'];
 }
 
 function _read() {
@@ -44,13 +40,13 @@ function _getToken(protocol, host) {
   return new Promise(function(resolve, reject) {
     url = protocol + '://' + host + '/oauth/linkedin/callback';
     Linkedin.setCallback(url);
-    resolve(Linkedin.auth.authorize(store.linkedin.resources));
+    resolve(Linkedin.auth.authorize(['r_basicprofile']));
   });
 }
 
-function _oauthLinkedinCallback(code, state) {
+function _oauthLinkedinCallback(params) {
   return new Promise(function(resolve, reject) {
-    Linkedin.auth.getAccessToken(code, state, function(err, result) {
+    Linkedin.auth.getAccessToken(params.code, params.state, function(err, result) {
       var linkedin;
 
       if (err) {
