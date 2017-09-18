@@ -1,0 +1,85 @@
+{
+  "name": "Lucas Bernardo de Souza Santos",
+  "avatar": "images/profile/lucassouza_profile.png",
+  "background": "background.jpg",
+  "title": "Desenvolvedor Full Stack Sênior",
+  "about": "Sou um Desenvolvedor Full Stack Sênior com mais de 10 anos de experiência em todos os estágios do ciclo de desenvolvimento. Tenho prática em desenvolvimento de software, criação de frameworks, integração entre sistemas, mentoria para desenvolvedores e identificação de talentos em desenvolvimento. Com ensino superior concluído, possuo conhecimento de arquitetura de software e desenvolvimento avançados, incluindo Java, JavaScript, Delphi, HTML5, JSON, XML, MySQL, Microsoft SQLServer, JQuery, Node.js e AngularJS. Forte experiência em gestão e liderança.",
+  "contact": {
+    "email": "sorackb@gmail.com",
+    "website": "lucassouza.ninja",
+    "skype": "sorackb",
+    "phone": "+55 (42) 99949-3924",
+    "place": "Ponta Grossa / PR - Brasil",
+    "facebook": "https://www.facebook.com/lucasbss",
+    "google_plus": "https://plus.google.com/u/1/105353010340963385077",
+    "linkedin": "https://www.linkedin.com/in/lucas-bernardo-de-souza-santos/",
+    "github": "https://github.com/sorackb"
+  },
+  "education": [
+    {
+      "icon": "fa-flask",
+      "title": "Educação Preparatória",
+      "institution": "Colégio Adventista de Interlagos",
+      "period": "1997 - 2002",
+      "description": "Obtive a base para meus estudos antes do Ensino Médio, valorizando o estudo e o aprendizado e adquirindo afinidade com o conhecimento."
+    },
+    {
+      "icon": "fa-book",
+      "title": "Ensino Médio",
+      "institution": "Colégio Adventista de Interlagos",
+      "period": "2003 - 2005",
+      "description": "Completei a preparação para o vestibular nesta instituição que possue, além de todos os méritos acadêmicos, um compromisso com a educação ética."
+    },
+    {
+      "icon": "fa-cogs",
+      "title": "Mecânico de Usinagem",
+      "institution": "SENAI Ary Torres",
+      "period": "2003 - 2005",
+      "description": "Qualificação profissional em processos de usinagem com máquinas convencionais e a comando numérico computadorizado (CNC).\nNeste curso com duração de 4 semestres obtive destaque em nota em todos os semestres, sendo prestigiado assim com certificados emitidos pela instituição.\nAprendi a administrar o tempo de estudo realizando o curso no contraturno do Ensino Médio."
+    },
+    {
+      "icon": "fa-graduation-cap",
+      "title": "Tecnologia em Análise e Desenvolvimento de Sistemas",
+      "institution": "Universidade Tecnológica Federal do Paraná",
+      "period": "2013 - 2017",
+      "description": "Formação profissional para a atuação em desenvolvimento tecnológico em informática, com ênfase em desenvolvimento de sistemas de informação, utilizando as modernas tecnologias da informação. Capacitação para adaptar-se às mudanças sociais e à evolução tecnológica, possibilitando uma constante atualização nas diversas tarefas e qualificações que o mundo do trabalho exige.\nAlgumas atividades que às quais o curso habilita são: programação em linguagem comercial e científica, operação e manutenção de sistemas de computadores, supervisão e orientação do trabalho de equipes de tecnologia de informação, análise e orientação de computação eletrônica, chefia nas áreas de tecnologia de informação, elaboração de manuais e documentos de sistemas, implantação e gerência de redes de teleprocessamento."
+    }
+  ],
+  "experience": [
+    {
+      "title": "Aprendiz",
+      "company": "Carbono Lorena",
+      "period": "2003 - 2005",
+      "description": "Fui aprendiz de usinagem industrial em paralelo com meus estudos no SENAI, programando para CNC (Comando Numérico Computadorizado) e acompanhando a linha de produção de peças de grafite."
+    },
+    {
+      "title": "Estagiário de Desenvolvimento",
+      "company": "Quantoon",
+      "period": "2008 - 2009",
+      "description": "Iniciei minha carreira em desenvolvimento aqui, tendo contato com diferentes tecnologias visando o controle de enxoval de grandes lavanderias.\tTrabalhei com RFID, porta serial e outras ferramentas que tinham como objetivo facilitar o rastreamento e processamento dos objetos."
+    },
+    {
+      "title": "Desenvolvedor Full Stack Pleno",
+      "company": "KMM Engenharia de Sistemas",
+      "period": "2009 - 2011",
+      "description": "Trabalhei principalmente em um sistema ERP com foco em soluções logísticas e de armazenagem.\nMantive o foco em refatorar partes críticas do sistema possibilitando assim a fácil manutenção e reutilização de código.\nTrabalhei junto a alguns clientes para reunir requisitos e realizar manutenções críticas em módulos com ampla utilização."
+    },
+    {
+      "title": "Desenvolvedor Full Stack Sênior",
+      "company": "Virtual Softwares para Seguros",
+      "period": "2012 - Atual",
+      "description": "Criei e mantive aplicações, bibliotecas e frameworks para automatizar e gerenciar informações para corretores de seguros.\nPesquisei novas tecnologias que melhor se adequassem aos objetivos dos sistemas.\nDei suporte técnico para problemas emergenciais, garantindo a resolução no melhor tempo possível."
+    }
+  ],
+  "interest": {
+    "text": "Em primeiro lugar eu adoro assistir séries e filmes. Amo jogar videogame e jogos eletrônicos com meus amigos. Gosto muito de dirigir e me sinto feliz quando estou viajando. Além disso, apesar de também trabalhar com isso, amo programar, mesmo no meu tempo livre.",
+    "icons": {
+      "one": {"icon": "fa-television", "text": "Séries"},
+      "two": {"icon": "fa-gamepad", "text": "Jogos"},
+      "three": {"icon": "fa-film", "text": "Filmes"},
+      "four": {"icon": "fa-plane", "text": "Viagens"},
+      "five": {"icon": "fa-car", "text": "Dirigir"},
+      "six": {"icon": "fa-keyboard-o", "text": "Programação"}
+    }
+  }
+}
