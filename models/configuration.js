@@ -66,7 +66,7 @@ function _oauthLinkedinCallback(params) {
 }
 
 function _resolve(host) {
-  host = host.indexOf('localhost') === 0 ? 'resume-ninja.herokuapp.com' : host;
+  host = host.indexOf('localhost') === 0 ? 'www.lucassouza.ninja' : host;
 
   return configurations[host];
 }

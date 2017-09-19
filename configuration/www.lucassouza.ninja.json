@@ -3,7 +3,7 @@
   "avatar": "images/profile/lucassouza_profile.png",
   "background": "background.jpg",
   "title": "Desenvolvedor Full Stack Sênior",
-  "about": "Sou um Desenvolvedor Full Stack Sênior com mais de 10 anos de experiência em todos os estágios do ciclo de desenvolvimento. Tenho prática em desenvolvimento de software, criação de frameworks, integração entre sistemas, mentoria para desenvolvedores e identificação de talentos em desenvolvimento. Com ensino superior concluído, possuo conhecimento de arquitetura de software e desenvolvimento avançados, incluindo Java, JavaScript, Delphi, HTML5, JSON, XML, MySQL, Microsoft SQLServer, JQuery, Node.js e AngularJS. Forte experiência em gestão e liderança.",
+  "about": "Sou um <b>Desenvolvedor Full Stack Sênior com mais de 10 anos de experiência</b> em todos os estágios do ciclo de desenvolvimento. Tenho prática em desenvolvimento de software, criação de frameworks, integração entre sistemas, mentoria para desenvolvedores e identificação de talentos em desenvolvimento. Com ensino superior concluído na Universidade Tecnológica Federal do Paraná (<b>UTFPR</b>), possuo conhecimento de arquitetura de software e desenvolvimento avançado, incluindo <b>Java, JavaScript, Delphi, HTML5, JSON, XML, MySQL, Microsoft SQLServer, JQuery, Node.js e AngularJS. Forte experiência em gestão e liderança.</b>",
   "contact": {
     "email": "sorackb@gmail.com",
     "website": "lucassouza.ninja",
@@ -35,14 +35,14 @@
       "title": "Mecânico de Usinagem",
       "institution": "SENAI Ary Torres",
       "period": "2003 - 2005",
-      "description": "Qualificação profissional em processos de usinagem com máquinas convencionais e a comando numérico computadorizado (CNC).\nNeste curso com duração de 4 semestres obtive destaque em nota em todos os semestres, sendo prestigiado assim com certificados emitidos pela instituição.\nAprendi a administrar o tempo de estudo realizando o curso no contraturno do Ensino Médio."
+      "description": "Qualificação profissional em processos de usinagem com máquinas convencionais e a comando numérico computadorizado (CNC).<br>Neste curso com duração de 4 semestres obtive destaque em nota em todos os semestres, sendo prestigiado assim com certificados emitidos pela instituição.<br>Aprendi a administrar o tempo de estudo realizando o curso no contraturno do Ensino Médio."
     },
     {
       "icon": "fa-graduation-cap",
       "title": "Tecnologia em Análise e Desenvolvimento de Sistemas",
       "institution": "Universidade Tecnológica Federal do Paraná",
       "period": "2013 - 2017",
-      "description": "Formação profissional para a atuação em desenvolvimento tecnológico em informática, com ênfase em desenvolvimento de sistemas de informação, utilizando as modernas tecnologias da informação. Capacitação para adaptar-se às mudanças sociais e à evolução tecnológica, possibilitando uma constante atualização nas diversas tarefas e qualificações que o mundo do trabalho exige.\nAlgumas atividades que às quais o curso habilita são: programação em linguagem comercial e científica, operação e manutenção de sistemas de computadores, supervisão e orientação do trabalho de equipes de tecnologia de informação, análise e orientação de computação eletrônica, chefia nas áreas de tecnologia de informação, elaboração de manuais e documentos de sistemas, implantação e gerência de redes de teleprocessamento."
+      "description": "Formação profissional para a atuação em desenvolvimento tecnológico em informática, com ênfase em desenvolvimento de sistemas de informação, utilizando as modernas tecnologias da informação. Capacitação para adaptar-se às mudanças sociais e à evolução tecnológica, possibilitando uma constante atualização nas diversas tarefas e qualificações que o mundo do trabalho exige.<br>Algumas atividades que às quais o curso habilita são: programação em linguagem comercial e científica, operação e manutenção de sistemas de computadores, supervisão e orientação do trabalho de equipes de tecnologia de informação, análise e orientação de computação eletrônica, chefia nas áreas de tecnologia de informação, elaboração de manuais e documentos de sistemas, implantação e gerência de redes de teleprocessamento."
     }
   ],
   "experience": [
@@ -62,17 +62,17 @@
       "title": "Desenvolvedor Full Stack Pleno",
       "company": "KMM Engenharia de Sistemas",
       "period": "2009 - 2011",
-      "description": "Trabalhei principalmente em um sistema ERP com foco em soluções logísticas e de armazenagem.\nMantive o foco em refatorar partes críticas do sistema possibilitando assim a fácil manutenção e reutilização de código.\nTrabalhei junto a alguns clientes para reunir requisitos e realizar manutenções críticas em módulos com ampla utilização."
+      "description": "Trabalhei principalmente em um sistema ERP com foco em soluções logísticas e de armazenagem.<br>Mantive o foco em refatorar partes críticas do sistema possibilitando assim a fácil manutenção e reutilização de código.<br>Trabalhei junto a alguns clientes para reunir requisitos e realizar manutenções críticas em módulos com ampla utilização."
     },
     {
       "title": "Desenvolvedor Full Stack Sênior",
       "company": "Virtual Softwares para Seguros",
       "period": "2012 - Atual",
-      "description": "Criei e mantive aplicações, bibliotecas e frameworks para automatizar e gerenciar informações para corretores de seguros.\nPesquisei novas tecnologias que melhor se adequassem aos objetivos dos sistemas.\nDei suporte técnico para problemas emergenciais, garantindo a resolução no melhor tempo possível."
+      "description": "Criei e mantive aplicações, bibliotecas e frameworks para automatizar e gerenciar informações para corretores de seguros.<br>Pesquisei novas tecnologias que melhor se adequassem aos objetivos dos sistemas.<br>Dei suporte técnico para problemas emergenciais, garantindo a resolução no melhor tempo possível."
     }
   ],
   "interest": {
-    "text": "Em primeiro lugar eu adoro assistir séries e filmes. Amo jogar videogame e jogos eletrônicos com meus amigos. Gosto muito de dirigir e me sinto feliz quando estou viajando. Além disso, apesar de também trabalhar com isso, amo programar, mesmo no meu tempo livre.",
+    "text": "Em primeiro lugar eu adoro assistir séries e filmes. Amo jogar videogame e jogos eletrônicos com meus amigos. Gosto muito de dirigir e me sinto feliz quando estou viajando. Além disso, apesar de também trabalhar com isso, <b>amo programar</b>, mesmo no meu tempo livre.",
     "icons": {
       "one": {"icon": "fa-television", "text": "Séries"},
       "two": {"icon": "fa-gamepad", "text": "Jogos"},

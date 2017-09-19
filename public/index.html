@@ -232,8 +232,7 @@
         <div id="about-card" class="card">
           <div class="card-content">
             <!-- ABOUT PARAGRAPH -->
-            <p>
-              {{vm.resume.about}}
+            <p ng-bind-html="vm.resume.about">
             </p>
           </div>
 
@@ -286,8 +285,7 @@
               </h6>
             </div>
             <!-- TIMELINE PARAGRAPH -->
-            <p>
-              {{vm.treatDescription(education.description, 150)}}
+            <p ng-bind-html="vm.treatDescription(education.description, 150)">
             </p>
             <!-- BUTTON TRIGGER MODAL -->
             <a ng-show="education.description.length > 150" ng-click="vm.modal = education" href="#" class="modal-dot" data-toggle="modal" data-target="#modal-education">
@@ -318,31 +316,12 @@
               <div class="col-md-4 col-sm-4 col-xs-12">
                 <!-- FIRST SKILL SECTION -->
                 <div class="skills-title">
-                  <h6 class="text-center">Professional</h6>
+                  <h6 class="text-center" ng-if="vm.resume.skills.professional">Profissional</h6>
                 </div>
-                <!-- FIRST SKILL BAR -->
-                <div class="skillbar" data-percent="90%">
-                  <div class="skillbar-title"><span>HTML5</span></div>
+                <div ng-repeat="professional in vm.resume.skills.professional" class="skillbar" ng-data-percent="professional.percentage">
+                  <div class="skillbar-title"><span>{{professional.description}}</span></div>
                   <div class="skillbar-bar"></div>
-                  <div class="skill-bar-percent">90%</div>
-                </div>
-                <!-- SECOND SKILL BAR  -->
-                <div class="skillbar" data-percent="90%">
-                  <div class="skillbar-title"><span>CSS3</span></div>
-                  <div class="skillbar-bar"></div>
-                  <div class="skill-bar-percent">90%</div>
-                </div>
-                <!-- THIRD SKILL BAR  -->
-                <div class="skillbar" data-percent="70%">
-                  <div class="skillbar-title"><span>jQuery</span></div>
-                  <div class="skillbar-bar"></div>
-                  <div class="skill-bar-percent">70%</div>
-                </div>
-                <!-- FOURTH SKILL BAR  -->
-                <div class="skillbar" data-percent="68%">
-                  <div class="skillbar-title"><span>PHP</span></div>
-                  <div class="skillbar-bar"></div>
-                  <div class="skill-bar-percent">68%</div>
+                  <div class="skill-bar-percent">{{professional.percentage}}</div>
                 </div>
               </div>
 
@@ -350,7 +329,7 @@
               <div class="col-md-4 col-sm-4 col-xs-12">
                 <!-- SECOND SKILL SECTION -->
                 <div class="skills-title">
-                  <h6 class="text-center">Personal</h6>
+                  <h6 class="text-center">Pessoal</h6>
                 </div>
                 <!-- FIRST SKILL BAR -->
                 <div class="skillbar" data-percent="80%">
@@ -450,8 +429,7 @@
               </h6>
             </div>
             <!-- TIMELINE PARAGRAPH -->
-            <p>
-              {{vm.treatDescription(experience.description, 150)}}
+            <p ng-bind-html="vm.treatDescription(experience.description, 150)">
             </p>
             <!-- BUTTON TRIGGER MODAL -->
             <a ng-show="experience.description.length > 150" ng-click="vm.modal = experience" href="#" class="modal-dot" data-toggle="modal" data-target="#modal-education">
@@ -483,8 +461,7 @@
         </div>
         <!--MODAL BODY-->
         <div class="modal-body">
-          <p>
-            {{vm.modal.description}}
+          <p ng-bind-html="vm.modal.description">
           </p>
         </div>
         <!--MODAL FOOTER-->
@@ -838,8 +815,7 @@
     <div id="interest-card" class="card">
       <!--INTEREST TEXT-->
       <div class="card-content">
-        <p>
-          {{vm.resume.interest.text}}
+        <p ng-bind-html="vm.resume.interest.text">
         </p>
       </div>
 
@@ -1305,6 +1281,7 @@
 <script src="javascript/custom.js"></script>
 <script src="toggle/js.js"></script>
 <script src="javascript/vendors/angular.min.js"></script>
+<script src="javascript/vendors/angular-sanitize.min.js"></script>
 <script src="ninja.app/ninja.app.js"></script>
 <script src="ninja.app/resume.controller.js"></script>
 <script src="ninja.app/resume.service.js"></script>

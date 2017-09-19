@@ -2,5 +2,5 @@
   'use strict';
 
   angular
-      .module('ninjaApp', []);
+      .module('ninjaApp', ['ngSanitize']);
 })();
