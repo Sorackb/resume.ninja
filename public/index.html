@@ -9,7 +9,7 @@
   <meta name="keywords" content="">
 
 
-  <title>{{vm.resume.name}} - {{vm.resume.title}}</title>
+  <title ng-bind="vm.title">Minha Página</title>
   <link rel="icon" href="images/site/fav-icon.png">
 
   <!--APPLE TOUCH ICON-->
@@ -63,8 +63,8 @@
       </div>
       <!-- NAME & STATUS -->
       <div class="text-holder text-center">
-        <h2>{{vm.resume.name}}</h2>
-        <h6>{{vm.resume.title}}</h6>
+        <h2 ng-bind="vm.resume.name"></h2>
+        <h6 ng-bind="vm.resume.title"></h6>
       </div>
     </div>
   </div>

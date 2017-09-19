@@ -17,6 +17,7 @@
 
     function _init() {
       resumeService.load().then(function load(configuration) {
+        vm.title = vm.resume.name + ' - ' + vm.resume.title;
         vm.resume = configuration.data;
       });
     }
