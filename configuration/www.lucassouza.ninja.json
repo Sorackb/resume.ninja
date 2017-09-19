@@ -6,7 +6,6 @@
   "about": "Sou um <b>Desenvolvedor Full Stack Sênior com mais de 10 anos de experiência</b> em todos os estágios do ciclo de desenvolvimento. Tenho prática em desenvolvimento de software, criação de frameworks, integração entre sistemas, mentoria para desenvolvedores e identificação de talentos em desenvolvimento. Com ensino superior concluído na Universidade Tecnológica Federal do Paraná (<b>UTFPR</b>), possuo conhecimento de arquitetura de software e desenvolvimento avançado, incluindo <b>Java, JavaScript, Delphi, HTML5, JSON, XML, MySQL, Microsoft SQLServer, JQuery, Node.js e AngularJS. Forte experiência em gestão e liderança.</b>",
   "contact": {
     "email": "sorackb@gmail.com",
-    "website": "lucassouza.ninja",
     "skype": "sorackb",
     "phone": "+55 (42) 99949-3924",
     "place": "Ponta Grossa / PR - Brasil",
@@ -72,7 +71,7 @@
     }
   ],
   "interest": {
-    "text": "Em primeiro lugar eu adoro assistir séries e filmes. Amo jogar videogame e jogos eletrônicos com meus amigos. Gosto muito de dirigir e me sinto feliz quando estou viajando. Além disso, apesar de também trabalhar com isso, <b>amo programar</b>, mesmo no meu tempo livre.",
+    "text": "Em primeiro lugar eu adoro assistir séries e filmes. Gosto muito de jogar videogame e jogos eletrônicos com a minha namorada e com meus amigos. Acho agradável dirigir e me sinto feliz quando estou viajando. Além disso, apesar de ser minha ferramenta de trabalho, <b>amo programar</b>, mesmo no meu tempo livre.",
     "icons": {
       "one": {"icon": "fa-television", "text": "Séries"},
       "two": {"icon": "fa-gamepad", "text": "Jogos"},
