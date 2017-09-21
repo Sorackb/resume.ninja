@@ -8,10 +8,4 @@ router.get('/resource', function(req, res, next) {
   }).catch(console.error);
 });
 
-router.get('/token', function(req, res, next) {
-  configuration.getToken(req.protocol, req.headers.host).then(function(response) {
-    res.redirect(response);
-  }).catch(console.error);
-});
-
 module.exports = router;
