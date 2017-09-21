@@ -49,25 +49,37 @@
       "title": "Aprendiz",
       "company": "Carbono Lorena",
       "period": "2003 - 2005",
-      "description": "Fui aprendiz de usinagem industrial em paralelo com meus estudos no SENAI, programando para CNC (Comando Numérico Computadorizado) e acompanhando a linha de produção de peças de grafite."
+      "description": "Fui aprendiz de usinagem industrial em paralelo com meus estudos no SENAI, programando para <b>CNC (Comando Numérico Computadorizado)</b> e acompanhando a linha de produção de peças de grafite."
+    },
+    {
+      "title": "Estagiário de Informática",
+      "company": "ABO - Associação Brasileira de Odontologia",
+      "period": "2006 - 2007",
+      "description": "Realizei trabalhos de monitoramento e manutenção da estrutura de computadores da Associação Brasileira de Odontologia em Ponta Grossa. Auxiliei usuários na utilização dos computadores e sistemas para funcionamento do orgão e manutenção do site que estava no ar durante este período.<br>Criei também um sistema de controle de patrimônio em <b>Delphi</b> e um sistema de auxílio para o evento realizado a cada 2 anos pela instituição."
+    },
+    {
+      "title": "Estagiário de Informática",
+      "company": "Colégio Sepam",
+      "period": "2007 - 2008",
+      "description": "Auxiliei na manutenção dos equipamentos de informática e implantei o processo de gerenciamento de computadores e softwares que garantiu a melhor utilização dos recursos e economia de tempo com relação às máquinas disponíveis no colégio."
     },
     {
       "title": "Estagiário de Desenvolvimento",
       "company": "Quantoon",
       "period": "2008 - 2009",
-      "description": "Iniciei minha carreira em desenvolvimento aqui, tendo contato com diferentes tecnologias visando o controle de enxoval de grandes lavanderias.\tTrabalhei com RFID, porta serial e outras ferramentas que tinham como objetivo facilitar o rastreamento e processamento dos objetos."
+      "description": "Iniciei minha carreira em desenvolvimento oficialmente aqui, tendo contato com diferentes tecnologias visando o controle de enxoval de grandes lavanderias.<br>Trabalhei com <b>RFID</b>, porta serial e outras ferramentas que tinham como objetivo facilitar o rastreamento e processamento dos objetos.<br>Neste estágio tive meu primeiro contato profissional com <b>Java e MySQL</b>."
     },
     {
       "title": "Desenvolvedor Full Stack Pleno",
       "company": "KMM Engenharia de Sistemas",
       "period": "2009 - 2011",
-      "description": "Trabalhei principalmente em um sistema ERP com foco em soluções logísticas e de armazenagem.<br>Mantive o foco em refatorar partes críticas do sistema possibilitando assim a fácil manutenção e reutilização de código.<br>Trabalhei junto a alguns clientes para reunir requisitos e realizar manutenções críticas em módulos com ampla utilização."
+      "description": "Trabalhei principalmente em um sistema ERP com foco em soluções logísticas e de armazenagem.<br>Mantive o foco em refatorar partes críticas do sistema possibilitando assim a fácil manutenção e reutilização de código.<br>Trabalhei junto a alguns clientes para reunir requisitos e realizar manutenções críticas em módulos com ampla utilização.<b>Neste período tabalhei com <b>Delphi e Oracle</b>."
     },
     {
       "title": "Desenvolvedor Full Stack Sênior",
       "company": "Virtual Softwares para Seguros",
       "period": "2012 - Atual",
-      "description": "Criei e mantive aplicações, bibliotecas e frameworks para automatizar e gerenciar informações para corretores de seguros.<br>Pesquisei novas tecnologias que melhor se adequassem aos objetivos dos sistemas.<br>Dei suporte técnico para problemas emergenciais, garantindo a resolução no melhor tempo possível."
+      "description": "Criei e mantive aplicações, bibliotecas e frameworks para automatizar e gerenciar informações para corretores de seguros.<br>Pesquisei novas tecnologias que melhor se adequassem aos objetivos dos sistemas.<br>Dei suporte técnico para problemas emergenciais, garantindo a resolução com qualidade no melhor tempo possível.<br>O banco de dados utilizado predominantemente foi o <b>Microsoft SQL Server</b> enquanto uma diversidade muito maior de linguagens e frameworks foi aprendida e aplicada.<br>Realizei manutenção nos sistemas já existentes em <b>Delphi, Dojo Toolkit e C#<b> no backend da aplicação Web.<br>Criei ferramentas de integração e obtenção de dados em <b>Java</br> e a base do novo sistema Web utilizando <b>AngularJS e Node.js</b>."
     }
   ],
   "interest": {
