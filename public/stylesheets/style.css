@@ -191,7 +191,7 @@ body.scale-effect .btn-holder .btn-play{transform:scale(28);-webkit-transform:sc
 .timeline-block .timeline-content .timeline-info h6 small{color:inherit;}
 @media screen and (max-width:768px){.timeline-block .timeline-content:before{display:none;}
 }
-@media only screen and (min-width:768px){#timeline-education::before{left:50%;margin-left:-2px;height:69.1%;opacity:0.4;background:#06A763;}
+@media only screen and (min-width:768px){#timeline-education::before{left:50%;margin-left:-2px;height:67.1%;opacity:0.4;background:#06A763;}
 #timeline-experience::before{left:50%;margin-left:-2px;height:69.1%;opacity:0.4;background:#06A763;}
 .timeline-block{margin:-5em 0;}
 .timeline-block .card{margin:0;}
