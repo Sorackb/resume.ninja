@@ -3,12 +3,13 @@
   "avatar": "images/profile/lucassouza_profile.png",
   "background": "background.jpg",
   "title": "Desenvolvedor Full Stack Sênior",
-  "about": "Sou um <b>Desenvolvedor Full Stack Sênior com mais de 10 anos de experiência</b> em todos os estágios do ciclo de desenvolvimento. Tenho prática em desenvolvimento de software, criação de frameworks, integração entre sistemas, mentoria para desenvolvedores e identificação de talentos em desenvolvimento. Com ensino superior concluído na Universidade Tecnológica Federal do Paraná (<b>UTFPR</b>), possuo conhecimento de arquitetura de software e desenvolvimento avançado, incluindo <b>Java, JavaScript, Delphi, HTML5, JSON, XML, MySQL, Microsoft SQLServer, JQuery, Node.js e AngularJS. Forte experiência em gestão e liderança.</b>",
+  "about": "Sou um <b>Desenvolvedor Full Stack Sênior com mais de 10 anos de experiência</b> em todos os estágios do ciclo de desenvolvimento. Tenho prática em desenvolvimento de software, criação de frameworks, integração entre sistemas, mentoria para desenvolvedores e identificação de talentos em desenvolvimento.<br>Com ensino superior concluído na Universidade Tecnológica Federal do Paraná (<b>UTFPR</b>), possuo conhecimento de arquitetura de software e desenvolvimento, incluindo <b>Java, JavaScript, Delphi, HTML5, JSON, XML, MySQL, Microsoft SQLServer, JQuery, Node.js e AngularJS. Também possuo experiência em gestão e liderança.</b>",
   "contact": {
     "email": "sorackb@gmail.com",
+    "website": "lucassouza.ninja",
     "skype": "sorackb",
     "phone": "+55 (42) 99949-3924",
-    "place": "Ponta Grossa / PR - Brasil",
+    "place": "Florianópolis / SC - Brasil",
     "facebook": "https://www.facebook.com/lucasbss",
     "google_plus": "https://plus.google.com/u/1/105353010340963385077",
     "linkedin": "https://www.linkedin.com/in/lucas-bernardo-de-souza-santos/",
@@ -42,6 +43,13 @@
       "institution": "Universidade Tecnológica Federal do Paraná",
       "period": "2013 - 2017",
       "description": "Formação profissional para a atuação em desenvolvimento tecnológico em informática, com ênfase em desenvolvimento de sistemas de informação, utilizando as modernas tecnologias da informação. Capacitação para adaptar-se às mudanças sociais e à evolução tecnológica, possibilitando uma constante atualização nas diversas tarefas e qualificações que o mundo do trabalho exige.<br>Algumas atividades que às quais o curso habilita são: programação em linguagem comercial e científica, operação e manutenção de sistemas de computadores, supervisão e orientação do trabalho de equipes de tecnologia de informação, análise e orientação de computação eletrônica, chefia nas áreas de tecnologia de informação, elaboração de manuais e documentos de sistemas, implantação e gerência de redes de teleprocessamento."
+    },
+    {
+      "icon": "fa-university",
+      "title": "Especialização - Arquitetura de Software Distribuído",
+      "institution": "Pontifícia Universidade Católica de Minas Gerais",
+      "period": "2019 - 2021",
+      "description": "O curso foi concebido de modo a buscar o preenchimento de uma lacuna na formação avançada dos profissionais de informática que atuam na concepção, construção e implantação de sistemas de informação que usam aspectos de arquitetura de software distribuído. O curso justifica-se pela crescente adoção de tecnologias e padrões baseados na Internet, pela demanda por aplicações em dispositivos móveis bem como pela necessidade de armazenamento, processamento e integração de grandes volumes de informação que têm incentivado a proliferação de sistemas de informação desenvolvidos em arquiteturas distribuídas. Em particular, destacam-se o crescimento da demanda por aplicações móveis, o fenômeno da computação em nuvem (cloud computing), o uso da Arquitetura Orientada a Microsserviços, as diversas alternativas para integração de aplicações e novas arquiteturas para tratamento do conceito de Big Data."
     }
   ],
   "experience": [
@@ -50,8 +58,7 @@
       "company": "Carbono Lorena",
       "period": "2003 - 2005",
       "description": "Fui aprendiz de usinagem industrial em paralelo com meus estudos no SENAI, programando para <b>CNC (Comando Numérico Computadorizado)</b> e acompanhando a linha de produção de peças de grafite."
-    },
-    {
+    },{
       "title": "Estagiário de Informática",
       "company": "ABO - Associação Brasileira de Odontologia",
       "period": "2006 - 2007",
@@ -67,23 +74,41 @@
       "title": "Estagiário de Desenvolvimento",
       "company": "Quantoon",
       "period": "2008 - 2009",
-      "description": "Iniciei minha carreira em desenvolvimento oficialmente aqui, tendo contato com diferentes tecnologias visando o controle de enxoval de grandes lavanderias.<br>Trabalhei com <b>RFID</b>, porta serial e outras ferramentas que tinham como objetivo facilitar o rastreamento e processamento dos objetos.<br>Neste estágio tive meu primeiro contato profissional com <b>Java e MySQL</b>."
+      "description": "Iniciei minha carreira em desenvolvimento aqui, tendo contato com diferentes tecnologias visando o controle de enxoval de grandes lavanderias.<br>Trabalhei com RFID, porta serial e outras ferramentas que tinham como objetivo facilitar o rastreamento e processamento dos objetos."
     },
     {
       "title": "Desenvolvedor Full Stack Pleno",
       "company": "KMM Engenharia de Sistemas",
       "period": "2009 - 2011",
-      "description": "Trabalhei principalmente em um sistema ERP com foco em soluções logísticas e de armazenagem.<br>Mantive o foco em refatorar partes críticas do sistema possibilitando assim a fácil manutenção e reutilização de código.<br>Trabalhei junto a alguns clientes para reunir requisitos e realizar manutenções críticas em módulos com ampla utilização.<br>Neste período tabalhei com <b>Delphi e Oracle</b>."
+      "description": "Trabalhei principalmente em um sistema ERP com foco em soluções logísticas e de armazenagem.<br>Mantive o foco em refatorar partes críticas do sistema possibilitando assim a fácil manutenção e reutilização de código.<br>Trabalhei junto a alguns clientes para reunir requisitos e realizar manutenções críticas em módulos com ampla utilização."
     },
     {
       "title": "Desenvolvedor Full Stack Sênior",
       "company": "Virtual Softwares para Seguros",
-      "period": "2012 - Atual",
+      "period": "2012 - 2017",
       "description": "Criei e mantive aplicações, bibliotecas e frameworks para automatizar e gerenciar informações para corretores de seguros.<br>Pesquisei novas tecnologias que melhor se adequassem aos objetivos dos sistemas.<br>Dei suporte técnico para problemas emergenciais, garantindo a resolução com qualidade no melhor tempo possível.<br>O banco de dados utilizado predominantemente foi o <b>Microsoft SQL Server</b> enquanto uma diversidade muito maior de linguagens e frameworks foi aprendida e aplicada.<br>Realizei manutenção nos sistemas já existentes em <b>Delphi, Dojo Toolkit e C#</b> no backend da aplicação Web.<br>Criei ferramentas de integração e obtenção de dados em <b>Java</b> e a base do novo sistema Web utilizando <b>AngularJS e Node.js</b>."
+    },
+    {
+      "title": "Backend Software Developer",
+      "company": "Softplan",
+      "period": "2019 - 2020",
+      "description": "Mantenedor da aplicação de integração com as Secretarias da Fazenda de diversos Estados e Municípios, provendo soluções para os problemas comuns à integração e propondo alteração em relação a arquitetura da aplicação e infraestrutura. Além disso atuar como solucionador de problemas através da criação e utilização efetiva de ferramentas de apoio visando a economia de tempo e automatização de tarefas do setor de procuradorias.<br><br>Linguagens de programação / Frameworks:<br><br>Java - Maven / JBoss / Spring Boot<br><br>Banco de Dados: Oracle e Microsoft SQL Server."
+    },
+    {
+      "title": "Full Stack Developer",
+      "company": "Softplan",
+      "period": "2020 - 2020",
+      "description": "Mantive e implementei aplicações juntamente com o time de integração, utilizando hooks para a aplicação Node.js e um portal desenvolvido em React.<br><br>Linguagens de programação / Frameworks:<br><br>Node.js / React<br>Banco de Dados: MongoDB"
+    },
+    {
+      "title": "Software Developer",
+      "company": "everis",
+      "period": "2020 - Atual",
+      "description": "Desenvolvi funcionalidades atuando na equipe responsável pelo projeto do portal da Enel do Ceará, Goiás e Rio de Janeiro, realizando integrações com ERPs SAP, Salesforce, etc.<br><br>Linguagens de programação / Frameworks: AEM / Java"
     }
   ],
   "interest": {
-    "text": "Em primeiro lugar eu adoro assistir séries e filmes. Gosto muito de jogar videogame e jogos eletrônicos com a minha namorada e com meus amigos. Acho agradável dirigir e me sinto feliz quando estou viajando. Além disso, apesar de ser minha ferramenta de trabalho, <b>amo programar</b>, mesmo no meu tempo livre.",
+    "text": "Em primeiro lugar eu adoro assistir séries e filmes. Amo jogar videogame e jogos eletrônicos com meus amigos. Gosto muito de dirigir e me sinto feliz quando estou viajando. Além disso, apesar de também trabalhar com isso, amo programar, mesmo no meu tempo livre.",
     "icons": {
       "one": {"icon": "fa-television", "text": "Séries"},
       "two": {"icon": "fa-gamepad", "text": "Jogos"},
