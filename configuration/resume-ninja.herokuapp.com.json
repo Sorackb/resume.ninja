@@ -3,13 +3,13 @@
   "avatar": "images/profile/lucassouza_profile.png",
   "background": "background.jpg",
   "title": "Desenvolvedor Full Stack Sênior",
-  "about": "Sou um Desenvolvedor Full Stack Sênior com mais de 10 anos de experiência em todos os estágios do ciclo de desenvolvimento. Tenho prática em desenvolvimento de software, criação de frameworks, integração entre sistemas, mentoria para desenvolvedores e identificação de talentos em desenvolvimento. Com ensino superior concluído, possuo conhecimento de arquitetura de software e desenvolvimento avançados, incluindo Java, JavaScript, Delphi, HTML5, JSON, XML, MySQL, Microsoft SQLServer, JQuery, Node.js e AngularJS. Forte experiência em gestão e liderança.",
+  "about": "Sou um Desenvolvedor Full Stack Sênior com mais de 10 anos de experiência em todos os estágios do ciclo de desenvolvimento. Tenho prática em desenvolvimento de software, criação de frameworks, integração entre sistemas, mentoria para desenvolvedores e identificação de talentos em desenvolvimento.\nCom ensino superior concluído na Universidade Tecnológica Federal do Paraná (UTFPR), possuo conhecimento de arquitetura de software e desenvolvimento, incluindo Java, JavaScript, Delphi, HTML5, JSON, XML, MySQL, Microsoft SQLServer, JQuery, Node.js e AngularJS. Também possuo experiência em gestão e liderança.Sou um Desenvolvedor Full Stack Sênior com mais de 10 anos de experiência em todos os estágios do ciclo de desenvolvimento. Tenho prática em desenvolvimento de software, criação de frameworks, integração entre sistemas, mentoria para desenvolvedores e identificação de talentos em desenvolvimento. Com ensino superior concluído, possuo conhecimento de arquitetura de software e desenvolvimento avançados, incluindo Java, JavaScript, Delphi, HTML5, JSON, XML, MySQL, Microsoft SQLServer, JQuery, Node.js e AngularJS. Forte experiência em gestão e liderança.",
   "contact": {
     "email": "sorackb@gmail.com",
     "website": "lucassouza.ninja",
     "skype": "sorackb",
     "phone": "+55 (42) 99949-3924",
-    "place": "Ponta Grossa / PR - Brasil",
+    "place": "Florianópolis / SC - Brasil",
     "facebook": "https://www.facebook.com/lucasbss",
     "google_plus": "https://plus.google.com/u/1/105353010340963385077",
     "linkedin": "https://www.linkedin.com/in/lucas-bernardo-de-souza-santos/",
@@ -67,8 +67,26 @@
     {
       "title": "Desenvolvedor Full Stack Sênior",
       "company": "Virtual Softwares para Seguros",
-      "period": "2012 - Atual",
+      "period": "2012 - 2017",
       "description": "Criei e mantive aplicações, bibliotecas e frameworks para automatizar e gerenciar informações para corretores de seguros.\nPesquisei novas tecnologias que melhor se adequassem aos objetivos dos sistemas.\nDei suporte técnico para problemas emergenciais, garantindo a resolução no melhor tempo possível."
+    },
+    {
+      "title": "Backend Software Developer",
+      "company": "Softplan",
+      "period": "2019 - 2020",
+      "description": "Mantenedor da aplicação de integração com as Secretarias da Fazenda de diversos Estados e Municípios, provendo soluções para os problemas comuns à integração e propondo alteração em relação a arquitetura da aplicação e infraestrutura. Além disso atuar como solucionador de problemas através da criação e utilização efetiva de ferramentas de apoio visando a economia de tempo e automatização de tarefas do setor de procuradorias.\n\nLinguagens de programação / Frameworks:\n\nJava - Maven / JBoss / Spring Boot\n\nBanco de Dados: Oracle e Microsoft SQL Server."
+    },
+    {
+      "title": "Full Stack Developer",
+      "company": "Softplan",
+      "period": "2020 - 2020",
+      "description": "Mantive e implementei aplicações juntamente com o time de integração, utilizando hooks para a aplicação Node.js e um portal desenvolvido em React.\n\nLinguagens de programação / Frameworks:\n\nNode.js / React\nBanco de Dados: MongoDB"
+    },
+    {
+      "title": "Software Developer",
+      "company": "everis",
+      "period": "2020 - Atual",
+      "description": "Desenvolvi funcionalidades atuando na equipe responsável pelo projeto do portal da Enel do Ceará, Goiás e Rio de Janeiro, realizando integrações com ERPs SAP, Salesforce, etc.\n\nLinguagens de programação / Frameworks: AEM / Java"
     }
   ],
   "interest": {
