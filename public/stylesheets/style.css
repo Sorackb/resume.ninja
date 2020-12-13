@@ -33,6 +33,8 @@ video{border:3px solid black;}
 .card .card-content{padding:40px;border-radius:0 0 2px 2px;}
 .card .card-content p{margin:0;color:inherit;text-align:center;}
 .modal{padding-right:0 !important;padding-left:0 !important;}
+.card-content > p {white-space: pre-line;}
+.modal .modal-content .modal-body > p {white-space: pre-line;}
 .modal .modal-content{border-radius:0 !important;background-color:#fff;color:#616161;}
 .modal .modal-content .modal-body{position:relative;padding:0 40px;text-align:justify;}
 .modal .modal-content .modal-body img{padding-top:10px;padding-bottom:10px;}
