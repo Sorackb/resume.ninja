@@ -132,7 +132,7 @@
             <div class="slant"></div>
 
             <!--EMPTY PLUS BUTTON-->
-            <div class="btn-floating btn-large add-btn"><i class="material-icons">add</i></div>
+            <!-- <div class="btn-floating btn-large add-btn"><i class="material-icons">add</i></div> -->
 
             <!--VIDEO PLAY BUTTON-->
             <!--<div id="button-holder" class="btn-holder">
@@ -183,6 +183,10 @@
 
             <!--LINKS-->
             <div class="links">
+              <!-- STACKOVERFLOW -->
+              <a ng-if="vm.resume.contact.stackoverflow" target="_blank" ng-href="{{vm.resume.contact.stackoverflow}}" id="first_one" class="social btn-floating indigo">
+                <i class="fa fa-stack-overflow"></i>
+              </a>
               <!-- FACEBOOK-->
               <a ng-if="vm.resume.contact.facebook" target="_blank" ng-href="{{vm.resume.contact.facebook}}" id="first_one" class="social btn-floating indigo">
                 <i class="fa fa-facebook"></i>
